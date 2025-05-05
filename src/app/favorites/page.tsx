@@ -1,18 +1,25 @@
 "use client";
 
 import { useState } from "react";
-import ToolCard from "@/components/ToolCard";
+import { useFavorites } from "@/context/FavoritesContext";
 import tools from "@/data/tools.json";
+import ToolCard from "@/components/ToolCard";
 import CategoryFilter from "@/components/CategoryFilter";
 import SearchInput from "@/components/SearchInput";
 
-const categories = Array.from(new Set(tools.map((tool) => tool.category)));
+export default function FavoritesPage() {
+  const { favorites } = useFavorites();
 
-export default function Home() {
+  const favoriteTools = tools.filter((tool) => favorites.includes(tool.id));
+
+  const categories = Array.from(
+    new Set(favoriteTools.map((tool) => tool.category))
+  );
+
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredTools = tools.filter((tool) => {
+  const filteredTools = favoriteTools.filter((tool) => {
     const matchesCategory = selectedCategory
       ? tool.category === selectedCategory
       : true;
@@ -24,7 +31,7 @@ export default function Home() {
 
   return (
     <main className="p-6">
-      <h1 className="text-3xl font-bold mb-6">All Tools</h1>
+      <h1 className="text-3xl font-bold mb-6">Favorite Tools</h1>
 
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-4">
         <CategoryFilter
@@ -36,7 +43,9 @@ export default function Home() {
       </div>
 
       {filteredTools.length === 0 ? (
-        <p className="text-gray-600">No tools match your search.</p>
+        <p className="text-gray-600">
+          No favorite tools match your search or filter.
+        </p>
       ) : (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredTools.map((tool) => (

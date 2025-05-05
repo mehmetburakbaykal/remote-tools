@@ -1,0 +1,82 @@
+[
+    {
+        "id": "slack",
+        "name": "Slack",
+        "description": "Team communication for remote work.",
+        "category": "Communication",
+        "website": "https://slack.com",
+        "rating": 4.7
+    },
+    {
+        "id": "notion",
+        "name": "Notion",
+        "description": "All-in-one workspace for notes, tasks, and docs.",
+        "category": "Productivity",
+        "website": "https://notion.so",
+        "rating": 4.8
+    },
+    {
+        "id": "zoom",
+        "name": "Zoom",
+        "description": "Video conferencing tool for remote teams.",
+        "category": "Communication",
+        "website": "https://zoom.us",
+        "rating": 4.4
+    },
+    {
+        "id": "figma",
+        "name": "Figma",
+        "description": "Collaborative interface design tool.",
+        "category": "Design",
+        "website": "https://figma.com",
+        "rating": 4.6
+    },
+    {
+        "id": "trello",
+        "name": "Trello",
+        "description": "Visual task management with kanban boards.",
+        "category": "Project Management",
+        "website": "https://trello.com",
+        "rating": 4.2
+    },
+    {
+        "id": "asana",
+        "name": "Asana",
+        "description": "Manage projects and tasks with ease.",
+        "category": "Project Management",
+        "website": "https://asana.com",
+        "rating": 4.3
+    },
+    {
+        "id": "miro",
+        "name": "Miro",
+        "description": "Online whiteboard for real-time collaboration.",
+        "category": "Design",
+        "website": "https://miro.com",
+        "rating": 4.5
+    },
+    {
+        "id": "clickup",
+        "name": "ClickUp",
+        "description": "All-in-one productivity platform.",
+        "category": "Productivity",
+        "website": "https://clickup.com",
+        "rating": 4.3
+    },
+    {
+        "id": "github",
+        "name": "GitHub",
+        "description": "Code hosting and version control platform.",
+        "category": "Development",
+        "website": "https://github.com",
+        "rating": 4.9
+    },
+    {
+        "id": "loom",
+        "name": "Loom",
+        "description": "Async video messaging for teams.",
+        "category": "Communication",
+        "website": "https://loom.com",
+        "rating": 4.4
+    }
+]

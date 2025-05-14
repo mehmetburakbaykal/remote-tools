@@ -8,8 +8,13 @@ type Props = {
   params: { slug: string };
 };
 
-export default function ToolDetailPage({ params }: Props) {
-  const tool = tools.find((t) => t.id === params.slug) as Tool | undefined;
+export default async function ToolDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const tool = tools.find((t) => t.id === slug) as Tool | undefined;
 
   if (!tool) return notFound();
 

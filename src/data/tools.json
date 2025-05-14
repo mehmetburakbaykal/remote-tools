@@ -99,7 +99,30 @@
         "description": "Video conferencing tool for remote teams.",
         "category": "Communication",
         "website": "https://zoom.us",
-        "rating": 4.4
+        "rating": 4.4,
+        "features": [
+            "HD video calls",
+            "Meeting recordings",
+            "Screen sharing",
+            "Breakout rooms"
+        ],
+        "tags": [
+            "video",
+            "meetings",
+            "remote"
+        ],
+        "image": "https://www.svgrepo.com/show/331273/zoom.svg",
+        "screenshots": [
+            "/screenshots/zoom-1.png"
+        ],
+        "launchDate": "2011-09-10",
+        "integrations": [
+            "Slack",
+            "Google Calendar",
+            "Zapier"
+        ],
+        "github": null,
+        "twitter": "https://twitter.com/Zoom"
     },
     {
         "id": "trello",
@@ -107,7 +130,30 @@
         "description": "Visual task management with kanban boards.",
         "category": "Project Management",
         "website": "https://trello.com",
-        "rating": 4.2
+        "rating": 4.2,
+        "features": [
+            "Kanban boards",
+            "Card attachments",
+            "Team collaboration",
+            "Power-ups"
+        ],
+        "tags": [
+            "tasks",
+            "boards",
+            "kanban"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Trello-logo-blue.svg",
+        "screenshots": [
+            "/screenshots/trello-1.png"
+        ],
+        "launchDate": "2011-09-13",
+        "integrations": [
+            "Slack",
+            "Google Drive",
+            "Butler"
+        ],
+        "github": null,
+        "twitter": "https://twitter.com/trello"
     },
     {
         "id": "asana",
@@ -115,7 +161,30 @@
         "description": "Manage projects and tasks with ease.",
         "category": "Project Management",
         "website": "https://asana.com",
-        "rating": 4.3
+        "rating": 4.3,
+        "features": [
+            "Task lists",
+            "Timelines",
+            "Automation rules",
+            "Reporting"
+        ],
+        "tags": [
+            "tasks",
+            "projects",
+            "teams"
+        ],
+        "image": "https://miro.medium.com/v2/0*iFUTku6aErcAH4R7.png",
+        "screenshots": [
+            "/screenshots/asana-1.png"
+        ],
+        "launchDate": "2012-11-01",
+        "integrations": [
+            "Slack",
+            "Google Drive",
+            "Zapier"
+        ],
+        "github": null,
+        "twitter": "https://twitter.com/asana"
     },
     {
         "id": "miro",
@@ -123,7 +192,30 @@
         "description": "Online whiteboard for real-time collaboration.",
         "category": "Design",
         "website": "https://miro.com",
-        "rating": 4.5
+        "rating": 4.5,
+        "features": [
+            "Infinite canvas",
+            "Sticky notes",
+            "Team collaboration",
+            "Templates"
+        ],
+        "tags": [
+            "whiteboard",
+            "collaboration",
+            "remote"
+        ],
+        "image": "https://w7.pngwing.com/pngs/613/411/png-transparent-miro-app-logo-tech-companies-thumbnail.png",
+        "screenshots": [
+            "/screenshots/miro-1.png"
+        ],
+        "launchDate": "2011-10-01",
+        "integrations": [
+            "Slack",
+            "Zoom",
+            "Asana"
+        ],
+        "github": null,
+        "twitter": "https://twitter.com/MiroHQ"
     },
     {
         "id": "clickup",
@@ -131,7 +223,30 @@
         "description": "All-in-one productivity platform.",
         "category": "Productivity",
         "website": "https://clickup.com",
-        "rating": 4.3
+        "rating": 4.3,
+        "features": [
+            "Tasks & docs",
+            "Goals",
+            "Time tracking",
+            "Custom views"
+        ],
+        "tags": [
+            "productivity",
+            "project management",
+            "docs"
+        ],
+        "image": "https://img.icons8.com/color/512/clickup.png",
+        "screenshots": [
+            "/screenshots/clickup-1.png"
+        ],
+        "launchDate": "2017-01-01",
+        "integrations": [
+            "Slack",
+            "GitHub",
+            "Google Calendar"
+        ],
+        "github": null,
+        "twitter": "https://twitter.com/ClickUp"
     },
     {
         "id": "github",
@@ -139,7 +254,30 @@
         "description": "Code hosting and version control platform.",
         "category": "Development",
         "website": "https://github.com",
-        "rating": 4.9
+        "rating": 4.9,
+        "features": [
+            "Git repositories",
+            "Pull requests",
+            "Code review",
+            "Actions CI/CD"
+        ],
+        "tags": [
+            "code",
+            "git",
+            "open source"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
+        "screenshots": [
+            "/screenshots/github-1.png"
+        ],
+        "launchDate": "2008-04-10",
+        "integrations": [
+            "Slack",
+            "Trello",
+            "Jira"
+        ],
+        "github": "https://github.com/github",
+        "twitter": "https://twitter.com/github"
     },
     {
         "id": "loom",
@@ -147,6 +285,29 @@
         "description": "Async video messaging for teams.",
         "category": "Communication",
         "website": "https://loom.com",
-        "rating": 4.4
+        "rating": 4.4,
+        "features": [
+            "Screen recording",
+            "Camera overlay",
+            "Link sharing",
+            "Viewer analytics"
+        ],
+        "tags": [
+            "video",
+            "async",
+            "recording"
+        ],
+        "image": "data:image/png;base64,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",
+        "screenshots": [
+            "/screenshots/loom-1.png"
+        ],
+        "launchDate": "2016-05-01",
+        "integrations": [
+            "Slack",
+            "Google Drive",
+            "Notion"
+        ],
+        "github": null,
+        "twitter": "https://twitter.com/loom"
     }
 ]

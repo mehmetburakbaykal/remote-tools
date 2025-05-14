@@ -1,19 +1,97 @@
 [
     {
-        "id": "slack",
-        "name": "Slack",
-        "description": "Team communication for remote work.",
-        "category": "Communication",
-        "website": "https://slack.com",
-        "rating": 4.7
-    },
-    {
         "id": "notion",
         "name": "Notion",
         "description": "All-in-one workspace for notes, tasks, and docs.",
         "category": "Productivity",
         "website": "https://notion.so",
-        "rating": 4.8
+        "rating": 4.8,
+        "features": [
+            "Collaborative docs",
+            "Custom databases",
+            "Markdown support",
+            "Team workspace"
+        ],
+        "tags": [
+            "docs",
+            "productivity",
+            "teams"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png",
+        "screenshots": [
+            "/screenshots/notion-1.png",
+            "/screenshots/notion-2.png"
+        ],
+        "launchDate": "2016-03-01",
+        "integrations": [
+            "Slack",
+            "Google Drive",
+            "Zapier"
+        ],
+        "github": null,
+        "twitter": "https://twitter.com/NotionHQ"
+    },
+    {
+        "id": "slack",
+        "name": "Slack",
+        "description": "Team communication and messaging platform.",
+        "category": "Communication",
+        "website": "https://slack.com",
+        "rating": 4.7,
+        "features": [
+            "Real-time messaging",
+            "Threaded conversations",
+            "App integrations",
+            "Audio and video calls"
+        ],
+        "tags": [
+            "chat",
+            "teams",
+            "communication"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Slack_Icon.png",
+        "screenshots": [
+            "/screenshots/slack-1.png"
+        ],
+        "launchDate": "2013-08-01",
+        "integrations": [
+            "Google Calendar",
+            "Trello",
+            "Zoom"
+        ],
+        "github": null,
+        "twitter": "https://twitter.com/SlackHQ"
+    },
+    {
+        "id": "figma",
+        "name": "Figma",
+        "description": "Collaborative interface design and prototyping tool.",
+        "category": "Design",
+        "website": "https://figma.com",
+        "rating": 4.6,
+        "features": [
+            "Live collaboration",
+            "Design systems",
+            "Prototyping tools",
+            "Commenting"
+        ],
+        "tags": [
+            "design",
+            "ui",
+            "ux"
+        ],
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+        "screenshots": [
+            "/screenshots/figma-1.png"
+        ],
+        "launchDate": "2016-09-27",
+        "integrations": [
+            "Zeplin",
+            "Slack",
+            "Jira"
+        ],
+        "github": null,
+        "twitter": "https://twitter.com/figma"
     },
     {
         "id": "zoom",
@@ -22,14 +100,6 @@
         "category": "Communication",
         "website": "https://zoom.us",
         "rating": 4.4
-    },
-    {
-        "id": "figma",
-        "name": "Figma",
-        "description": "Collaborative interface design tool.",
-        "category": "Design",
-        "website": "https://figma.com",
-        "rating": 4.6
     },
     {
         "id": "trello",

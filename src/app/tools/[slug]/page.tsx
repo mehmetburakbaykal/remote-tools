@@ -1,5 +1,7 @@
-import tools from "@/data/tools.json";
 import { notFound } from "next/navigation";
+import tools from "@/data/tools.json";
+import type { Tool } from "@/types/tool";
+import Image from "next/image";
 import Link from "next/link";
 
 type Props = {
@@ -7,34 +9,82 @@ type Props = {
 };
 
 export default function ToolDetailPage({ params }: Props) {
-  const tool = tools.find((item) => item.id === params.slug);
+  const tool = tools.find((t) => t.id === params.slug) as Tool | undefined;
 
   if (!tool) return notFound();
 
   return (
-    <main className="p-4 sm:p-6 lg:p-8 max-w-2xl w-full">
+    <main className="p-6 max-w-3xl">
       <Link
         href="/"
-        className="text-sm text-slate-600 hover:underline block mb-4"
+        className="text-sm text-slate-600 hover:underline mb-4 block"
       >
-        ← Back to tools
+        ← Back to all tools
       </Link>
-      <h1 className="text-3xl font-bold mb-2">{tool.name}</h1>
-      <p className="text-gray-700">{tool.description}</p>
-      <div className="mt-4">
-        <span className="inline-block bg-gray-100 px-3 py-1 rounded-full text-sm">
-          {tool.category}
-        </span>
+
+      <div className="flex items-center gap-4 mb-6">
+        {tool.image && (
+          <Image
+            src={tool.image}
+            alt={tool.name}
+            width={48}
+            height={48}
+            className="rounded"
+          />
+        )}
+        <h1 className="text-3xl font-bold">{tool.name}</h1>
       </div>
-      <div className="mt-2 text-yellow-600">⭐ {tool.rating}</div>
+
+      <p className="text-gray-700 mb-4">{tool.description}</p>
+
       <a
         href={tool.website}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-slate-600 hover:underline mt-4 inline-block"
+        className="text-slate-600 underline mb-6 inline-block"
       >
-        Visit Website →
+        Visit website →
       </a>
+
+      {tool.features?.length && (
+        <>
+          <h2 className="text-xl font-semibold mt-6 mb-2">Key Features</h2>
+          <ul className="list-disc list-inside text-gray-700 space-y-1">
+            {tool.features.map((feature) => (
+              <li key={feature}>{feature}</li>
+            ))}
+          </ul>
+        </>
+      )}
+
+      {tool.integrations?.length && (
+        <>
+          <h2 className="text-xl font-semibold mt-6 mb-2">Integrations</h2>
+          <div className="flex flex-wrap gap-2">
+            {tool.integrations.map((name) => (
+              <span
+                key={name}
+                className="text-sm bg-slate-100 px-2 py-1 rounded-full text-gray-700"
+              >
+                {name}
+              </span>
+            ))}
+          </div>
+        </>
+      )}
+
+      <div className="mt-6 flex items-center gap-4 text-sm text-slate-600">
+        {tool.twitter && (
+          <a href={tool.twitter} target="_blank" rel="noopener noreferrer">
+            Twitter ↗
+          </a>
+        )}
+        {tool.github && (
+          <a href={tool.github} target="_blank" rel="noopener noreferrer">
+            GitHub ↗
+          </a>
+        )}
+      </div>
     </main>
   );
 }
